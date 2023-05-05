@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Invoice
+comment1.params=tipo\ preco\ quantidade\ descricao
+comment1.target=Invoice(java.lang.String,\ double,\ int,\ java.lang.String)
+comment10.params=
+comment10.target=double\ getlnvoiceAmount()
+comment2.params=
+comment2.target=java.lang.String\ getTipo()
+comment3.params=tipo
+comment3.target=void\ setTipo(java.lang.String)
+comment4.params=
+comment4.target=double\ getPreco()
+comment5.params=preco
+comment5.target=void\ setPreco(double)
+comment6.params=
+comment6.target=int\ getQuantidade()
+comment7.params=quantidade
+comment7.target=void\ setQuantidade(int)
+comment8.params=
+comment8.target=java.lang.String\ getDescricao()
+comment9.params=descricao
+comment9.target=void\ setDescricao(java.lang.String)
+numComments=11
