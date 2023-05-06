@@ -1,13 +1,13 @@
-
-/**
- * Escreva uma descrição da classe Principal aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
- */
 public class Principal
 {
     public static void main(String[] args){
+        
+        
+        String nome = Teclado.leString();
+        String email = Teclado.leString();
+        String senha = Teclado.leString();
+        int idade = Teclado.leInt();
+        char sexo = Teclado.leChar();
         
         String titulo = Teclado.leString();
         String autor = Teclado.leString();
@@ -17,16 +17,12 @@ public class Principal
         
         Livro livro = new Livro(titulo, autor, pagina, preco, ano);
         
-        String nome = Teclado.leString();
-        String email = Teclado.leString();
-        String senha = Teclado.leString();
-        int idade = Teclado.leInt();
-        char sexo = Teclado.leChar();
-        Cliente cliente = new Cliente(nome, email, senha, idade, sexo);
+        Cliente cliente = new Cliente(nome, email, senha, idade, sexo, livro);
         
-        System.out.println(livro.calcularPrecoPorPagina());
-        System.out.println(livro.toString());
-        System.out.println(cliente.imprimeInformacoes());
+        System.out.printf("Preço por página livro R$%.2f",livro.calcularPrecoPorPagina());
+        System.out.println("\nO cliente " + cliente.getNome() + " está com o livro " + livro.getTitulo() +
+        ", e o preço por página deste livro é R$" + livro.calcularPrecoPorPagina());
+       cliente.imprimeInformacoes();
         
         
         
